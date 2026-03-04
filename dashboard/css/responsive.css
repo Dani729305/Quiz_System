@@ -60,9 +60,9 @@
     .certificate-main{
         width: 100vw;
         height: 100vh;
-        top: 50%;
+        top: 30%;
         left: 50%;
-        transform: translateX(50%,-50%);
+        transform: translateX(-50%,-50%);
         border-radius: 50px;
         padding: 20px;
         background: linear-gradient(135deg, #0d6efd, #0a58ca);
