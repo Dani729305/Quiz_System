@@ -64,7 +64,7 @@ LogOutBtn.addEventListener("click", (e) =>{
     e.target.disabled = true;
     e.target.style.background = "blue";
     setTimeout(() => {
-        window.location = "../login.html";
+        window.location = "../index.html";
         sessionStorage.removeItem("ID");
     }, 3000);
 })
