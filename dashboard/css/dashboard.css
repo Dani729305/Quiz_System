@@ -1,0 +1,515 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+:root{
+    --background:#1a0266;
+    --box-color:#FFFFFF;
+    --bg-color : #062487;
+    --text-color : #160e0e;
+    --hover : #02d3a283;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start side-nav coding */
+.side-nav{
+    width: 16.66vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 15px 0px;
+    position: fixed;
+    z-index:100;
+}
+.profile-pic{
+    width: 70%;
+    border-radius: 50%;
+}
+.profile-pic img{
+    width: 100%;
+background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.profile-pic img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+}
+.list-group {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.list-group .side-list{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+     font-family:rimixicon;
+     font-size: 1.4vw;
+     text-transform: uppercase;
+     margin-bottom:20px;
+     cursor: pointer;
+     padding: 20px;
+     border: none;
+    }
+    .list-group li:hover{
+    background-color: var(--hover);
+    transition: 0.5s ease-in-out;
+}
+.list-group a{
+    text-decoration: none;
+    width: 100%;
+}
+.list-group li:hover i{
+    color: var(--background);
+    transition: 0.4s ease;
+}
+.list-group .list-group-item.active{
+    background-color: var(--hover);
+}
+.list-group .list-group-item.active i{
+    color: var(--background);
+}
+.list-group i{
+    margin-right: 15px;
+}
+.side-nav button{
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    outline: none;
+    border: 0;
+    background-color: var(--hover);
+    color:white;
+     font-family:rimixicon;
+    font-size: 1.5vw;
+}
+.side-nav button:hover{
+    background-color: var(--bg-color);
+    transition: 0.4s ease;
+}
+/* end side-nav coding */
+
+/* start toggler-box coding*/
+
+.toggler-box{
+    display: none;
+}
+.toggler-box .toggler-icon{
+    position:absolute;
+    padding: 15px;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* end toggler-box coding*/
+
+/* start main box coding */
+.content{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--bg-color);
+}
+.content h1{
+    color: white;
+    font-size: 2.7rem;
+    font-family: rimixicon;
+}
+.content::selection{
+    background-color: yellow;
+}
+.head{
+    color: rgba(0, 0, 0, 0.761);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main .box{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: centr;
+    justify-content: center;
+}
+.main .box .number-box{
+    width:120px;
+    height: 120px;
+    border: 3px solid var(--bg-color);
+    border-bottom-color: #fafcfa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.main .box .number-box h3{
+    font-family: Yomogi;
+    font-size: 2.3rem;
+    color: var(--background) !important;
+}
+.gap{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+}
+.content-color{
+    background-color: var(--bg-color);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding: 5px 0 3px 0;
+     color: white;
+     text-align: center;
+     font-family: rimixicon;
+}
+.icons i{
+    font-size: 22px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.icons i:hover{
+   scale: 1.2;
+   transition: 0.3s ease-in;
+   color: var(--background);
+}
+.visible-question{
+    font-size: 22px;
+}
+.subject-content{
+    margin-bottom: 20px;
+}
+.correct{
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    color: white;
+    font-family: rimixicon;
+    padding: 5px 10px;
+}
+/* end main box coding */
+/* start register box coding */
+
+.button button{
+background-color: var(--background);
+}
+.profile{
+    width: 70px;
+    height: 70px;
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.registrationData td{
+    font-family: rimixicon;
+    text-transform: uppercase;
+}
+.registrationData i{
+    font-size: 20px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.registrationData i:hover{
+   scale: 1.2;
+   transition: 0.3s ease-in;
+   color: var(--background);
+}
+
+
+/* end register box coding */
+
+/* start register box coding */
+
+ 
+
+
+    .over{
+    position: fixed;
+    top: 10%;             
+    left: 10%;            
+    width: 80vw;        
+    height: 80vh;       
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    z-index: 9999; 
+    overflow-y: auto;    
+}
+.over .header{
+    padding: 5px 10px 0 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     width: 100%;
+    height: 8vh;
+    background-color: var(--background);
+    color: white;
+    padding-left: 10px ;
+}
+.dani span{
+    background-color: var(--background);
+    color: white;
+}
+.over .header h3{
+    font-family: rimixicon;
+    font-weight: bold;
+}
+.header i{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.over .profile-box{
+    width: 100%;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--background);
+}
+.profile-box h3{
+    margin-top: 20px;
+}
+.profile-box  i{
+   position: absolute;
+   right:-20%;
+   top: 0%;
+   font-size: 30px;
+   font-weight: 800;
+   cursor: pointer;
+   color: white;
+}
+.profile-box input{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    
+}
+.over .upload-box{
+    width: 150px;
+    height: 150px;
+    background-image: url(../assets/ed.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+.over .second{
+    background-color: white;
+}
+.over .form{
+    width: 100%;
+    height: 100%;
+}
+.over .date-box{
+    margin-top: 15px;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.over .date-box .icon-box{
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.over .box{
+background-color: var(--background);
+}
+.over .date-box .icon-box i{
+    font-size: 33px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.date-box h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    font-family: rimixicon;
+}
+.buttons button{
+    background-color: var(--background);
+    color: white;
+    margin-left: 15px;
+    font-size:18px;
+    width: 100px;
+}
+.buttons button:hover{
+    color: white;
+}
+/* end register box coding */
+
+/*start certificate coding*/
+
+.certificate-main{
+    width: 55vw;
+    height: 120vh;
+    background-color:#7f7c7a;
+    box-shadow:5px 10px 100px 10px black;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+    z-index: 1000;
+    display: none;
+    pointer-events: none;
+}
+.certificate-main.active{
+    display: block;
+    pointer-events: auto;
+}
+.certificate-main img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    
+}
+.certificate-main .main-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding-left: 160px;
+    padding-right: 10px;
+}
+.certificate-main .main-box p{
+    font-family: rimixicon;
+    font-size: 25px;
+    margin: 0px 200px ;
+    color: #7f7c7a;
+     text-shadow: 1px 1px 2px black;
+}
+.certificate-main .main-box .content-box{
+    position: absolute;
+    top: 19%;
+    left: 10%;
+      width: 100%;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+}
+.certificate-main .main-box .content-box .pic-box:nth-child(1){
+    width: 9vw;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.certificate-main .main-box .content-box .pic-box{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.certificate-main .main-box .content-box .pic-box p{
+    margin:15px 30px;
+     text-shadow: 1px 1px 2px black;
+}
+.certificate-main .main-box .content-box .pic-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.certificate-main .main-box .name-box{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height:7vh;
+    text-align: center;
+}
+.certificate-main .main-box .name-box h1{
+    font-family: rimixicon;
+    color: #7f7c7a;
+    text-shadow: 1px 1px 2px black;
+}
+.certificate-main .main-box .tablee{
+    position: absolute;
+    top: 47%;
+    left:23%;
+}
+.certificate-main .main-box .tablee th{
+    width: 10%;
+    color: #7f7c7a;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 500;
+}
+.certificate-main .main-box .tablee td{
+    color: #7f7c7a;
+    text-shadow: 1px 1px 2px var(--bg-color);
+    font-weight: 400;
+}
+.certificate-main .main-box .grade-box{
+    position: absolute;
+    top: 85%;
+    left: 8%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.certificate-main .main-box .grade-box .pass{
+    width: 30%;
+    height: 100%;
+}
+.certificate-main .main-box .grade-box .pass h2{
+    margin-left: 30px;
+    color: #7f7c7a;
+    text-shadow: 1px 1px 2px black;
+}
+.certificate-main .main-box .grade-box .pass:nth-child(1) h2{
+    margin-left: 210px;
+}
+.certificate-main .certificate-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.certificate-main .certificate-btn i{
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 5px 5px black;
+}
+
+/*end certificate coding*/
+
+
+/*fix bugs coding*/
+.change span{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.591);
+}
+/*end bugs coding*/
+
+

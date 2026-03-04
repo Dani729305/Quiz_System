@@ -1,0 +1,13 @@
+@media (max-width : 400px){
+    h1{
+        font-size: 22px;
+    }
+    .second span{
+        padding: 6px;
+        font-size: 18px;
+    }
+    .second .btn{
+        font-size: 20px;
+    }
+
+}

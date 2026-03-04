@@ -1,0 +1,190 @@
+/* responsiveness coding */
+@media(max-width : 930px){
+    .list-group .side-list{
+        font-size: 1.6vw;
+    }
+}
+@media(max-width : 767px){
+    .side-nav{
+        transform: translateX(-255px);
+        width: 200px;
+        height: 100vh;
+    }
+     .side-nav.active{
+        transform: translateX(0px);
+        width: 200px;
+    }
+    .list-group .side-list{
+        font-size: 20px;
+    }
+    .side-nav button{
+        font-size: 20px;
+    }
+    .toggler-box{
+        display: block;
+    }
+    .content{
+        height: 3rem;
+    }
+    .content h1{
+        font-size: 1.8rem;
+    }
+    .subject-content{
+    margin-bottom: 20px;
+}
+.over .second{
+    background-color: #062487;
+}
+}
+
+@media (max-width : 575px){
+    .main .box{
+        width: 100%;
+    height: 100px;
+    }
+    .main .box .number-box{
+          width:100px;
+          height: 100px;
+    }
+    .main .box .number-box h3{
+        font-size: 2rem;
+    }
+    .over{
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Make certificate full screen */
+    .certificate-main{
+        width: 100vw;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translateX(50%,-50%);
+        border-radius: 50px;
+        padding: 20px;
+        background: linear-gradient(135deg, #0d6efd, #0a58ca);
+        overflow-y: auto;
+        pointer-events: all;
+    }
+
+    /* REMOVE background image */
+    .certificate-main > img{
+        display: none;
+    }
+
+    /* Remove absolute positioning */
+    .certificate-main .main-box{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Address text */
+    .certificate-main .main-box .adress{
+        margin: 10px 0;
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-shadow: none;
+    }
+     .certificate-main .main-box p{
+         margin: 10px 0;
+         font-size: 17px;
+         color: white;
+         text-shadow: none;
+        }
+
+    /* Content section stack */
+    .certificate-main .main-box .content-box{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 0;
+        gap: 5px;
+    }
+
+     .certificate-main .main-box .content-box .pic-box:nth-child(1){
+        display: none;
+     }
+    .certificate-main .main-box .content-box .pic-box{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+
+    .certificate-main .main-box .content-box .pic-box p{
+        margin: 5px 0;
+        color: white;
+    }
+
+    /* Name section */
+    .certificate-main .main-box .name-box{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 20px 0;
+    }
+
+    .certificate-main .main-box .name-box h1{
+        font-size: 22px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: none;
+    }
+
+    /* Table */
+    .certificate-main .main-box .tablee{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        overflow-x: auto;
+    }
+
+    .certificate-main table{
+        font-size: 14px;
+        color: white;
+    }
+
+    .certificate-main th,
+    .certificate-main td{
+        color: white !important;
+        text-shadow: none !important;
+    }
+
+    /* Grade section */
+    .certificate-main .main-box .grade-box{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 30px;
+    }
+
+    .certificate-main .main-box .grade-box .pass{
+        width: 100%;
+    }
+
+    .certificate-main .main-box .grade-box .pass h2{
+        margin-left: 0;
+        color: white;
+        text-shadow: none;
+    }
+
+}
+
+
